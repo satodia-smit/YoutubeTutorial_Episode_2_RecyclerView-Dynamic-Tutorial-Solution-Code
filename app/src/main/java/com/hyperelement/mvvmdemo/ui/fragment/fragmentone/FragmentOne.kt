@@ -29,7 +29,7 @@ class FragmentOne :
 //        adapter.addItem(EmployeeEntity(id = 1, name = "ABC"))
 
         viewModel.loadEmployeeFromStorage()
-c
+
         viewModel.mEmployeeList.observe(viewLifecycleOwner, Observer {
             adapter.addItems(it)
         })
